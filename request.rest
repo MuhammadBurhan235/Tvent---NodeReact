@@ -1,0 +1,49 @@
+### nampilin semua
+GET http://localhost:5000/users
+
+### nampilin data dengan id 2
+GET http://localhost:5000/users/2
+
+### nampilin data dengan id 2
+GET http://localhost:5000/signin/aa@gmail.com/aaa
+
+### membuat data baru dengan isian json dibawah
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Zhafira Nur Ahdiya",
+    "email": "jaapirra@gmail.com",
+    "gender": "Female"
+}
+
+### memperbarui data id 2 dengan data baru
+PATCH http://localhost:5000/users/2
+Content-Type: application/json
+
+{
+    "name": "Zhafira Nur Ahdiya",
+    "email": "jaapirra@gmail.com",
+    "gender": "Female"
+}
+
+### menghapus data ber id 3
+GET http://localhost:5000/users/2
+
+### membuat data baru dengan isian json dibawah
+POST http://localhost:5000/events
+Content-Type: application/json
+
+{
+    "nama_event": "PMB I-FEST",
+    "deskripsi_event": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor quam error temporibus sunt dolorum facilis reprehenderit voluptatum laboriosam distinctio animi veniam nulla ab, velit, consectetur recusandae perspiciatis porro dolores.",
+    "penyelenggara_event": "LDK Al-Fath",
+    "klasifikasi_divisi": "#Divisi Acara - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor quam error temporibus sunt dolorum facilis reprehenderit voluptatum laboriosam distinctio animi veniam nulla ab, velit, consectetur recusandae perspiciatis porro dolores. - b - c #Divisi Pendataan - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor quam error temporibus sunt dolorum facilis reprehenderit voluptatum laboriosam distinctio animi veniam nulla ab, velit, consectetur recusandae perspiciatis porro dolores. - y - z",
+    "benefit_event": "- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor quam error temporibus sunt dolorum facilis reprehenderit voluptatum laboriosam distinctio animi veniam nulla ab, velit, consectetur recusandae perspiciatis porro dolores. - b - z - Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor quam error temporibus sunt dolorum facilis reprehenderit voluptatum laboriosam distinctio animi veniam nulla ab, velit, consectetur recusandae perspiciatis porro dolores. - z - b",
+    "kepanitiaan_mulai": "2023-05-12",
+    "kepanitiaan_selesai": "2023-06-12",
+    "event_mulai": "2023-05-12",
+    "event_selesai": "2023-06-01",
+    "poster_event": "pmboprec.png"
+}
+
